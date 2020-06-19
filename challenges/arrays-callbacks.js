@@ -46,9 +46,7 @@ const lowPopulationAnimals = zooAnimals.filter(x => x["population"] < 5);
 The zoos need to know their total animal population across the United States. Find the total population from all the zoos using the .reduce() method. Remember the reduce method takes two arguments: a callback (which itself takes two args), and an initial value for the count.
 
 */
-let populationTotal = zooAnimals.reduce(function (a, b) {
-  return {population: a.population + b.population}
-});
+let populationTotal = zooAnimals.reduce((a, b) => ({population: a.population + b.population}));
   
 // console.log(populationTotal);
 
