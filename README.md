@@ -27,14 +27,31 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+    The difference between .forEach and .map is simply that within the Array.prototype.map there is a .forEach function that executes the callback function
+    within .map(callback-is-here) on each element of the array preceding the array-is-here.map(), and then pushes each element to a new array (this occurs under the hood within the prototype) and then when the .forEach and push are completed, it returns a new array. 
+
+    .forEach essentially does less than .map, and only iterates over each item in the array which is referenced behind the .forEach(), executing the callback function on each element
+
 2. Explain the difference between a callback and a higher order function.
+
+    A higher order function is one that accepts other functions as its parameters
+
+    These other functions, which are parameters of the higher order function, are called 'callback' functions
 
 3. What is closure?
 
+    Closure is a characteristic of functions that means that variable declared in the parent(s) functions can be accessed by children function(s). It also refers to code that has been identified which can be used/invoked later on
+
 4. Describe the four rules of the 'this' keyword.
+    1) If 'this' is called in the global scope, it will refer to the window. However, if strict mode is enabled, it will return undefined
+    2) When a function or method is called using a dot notation, 'this' will refer to the object that precedes the dot
+    3) When 'this' is used in a constructor function, it refers to the instance of the object that is created
+    4) When using .call() or .apply() or .bind(), 'this' is explicity set to the object in which we are using one of those methods on
 
 5. Why do we need super() in an extended class?
 
+    super() tells the Child what keys to inherit from the Parent. It helps keep our objects DRY
+    
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions
