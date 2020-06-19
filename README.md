@@ -28,7 +28,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
     The difference between .forEach and .map is simply that within the Array.prototype.map there is a .forEach function that executes the callback function
-    within .map(callback-is-here) on each element of the array preceding the array-is-here.map(), and then pushes each element to a new array (this occurs under the hood within the prototype) and then when the .forEach and push are completed, it returns a new array. 
+    within .map(callback-is-here) on each element of the array preceding the array-is-here.map(), and then pushes each element to a new array (this occurs under the hood within the prototype) and then when the .forEach and push are completed, it returns the new array. 
 
     .forEach essentially does less than .map, and only iterates over each item in the array which is referenced behind the .forEach(), executing the callback function on each element
 
@@ -40,7 +40,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 3. What is closure?
 
-    Closure is a characteristic of functions that means that variable declared in the parent(s) functions can be accessed by children function(s). It also refers to code that has been identified which can be used/invoked later on
+    Closure is a characteristic of functions that means that variable declared in the parent(s) functions can be accessed by children function(s). It also refers to code that has been identified which can be used/invoked later on. Closures are identifiable by opening and closing curly brackets
 
 4. Describe the four rules of the 'this' keyword.
     1) If 'this' is called in the global scope, it will refer to the window. However, if strict mode is enabled, it will return undefined
@@ -51,7 +51,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 5. Why do we need super() in an extended class?
 
     super() tells the Child what keys to inherit from the Parent. It helps keep our objects DRY
-    
+
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions
